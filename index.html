@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anitta Kurian | AI & Data Science | IEEE Researcher</title>
+    <meta name="description"
+        content="Portfolio of Anitta Kurian, a B.Tech AI & Data Science graduate from Kerala with two IEEE publications in Generative AI and multilingual NLP.">
+    <meta property="og:title" content="Anitta Kurian | AI & Data Science">
+    <meta property="og:description"
+        content="Published IEEE researcher. Generative AI & LLM builder. Available for AI/ML roles.">
+    <meta property="og:image" content="https://anittakurian.github.io/portfolio/assets/og-image.png">
+    <meta name="theme-color" content="#7C6BC9">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="light-theme">
+    <!-- Particle Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Anitta Kurian</a>
+
+            <nav class="nav-links-desktop">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light theme"
+                    title="Toggle color theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- Resume CTA -->
+                <a href="assets/resume.pdf" class="btn btn-outline nav-cta-desktop" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-solid fa-download"></i> Resume
+                </a>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-nav-drawer" class="mobile-nav-drawer">
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#research" class="mobile-nav-link">Research</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+            <a href="assets/resume.pdf" class="btn btn-outline mobile-nav-cta" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content text-center">
+            <p class="hero-eyebrow code-font fade-up-init">AI & Data Science · IEEE Researcher · Kerala, India</p>
+            <h1 class="hero-title serif-font italic fade-up-init">
+                Building AI that understands<br>
+                <span>people and language.</span>
+            </h1>
+            <p class="hero-description fade-up-init">
+                I'm Anitta Kurian, a B.Tech graduate in AI and Data Science from MITS Kochi. I build Generative AI
+                systems, LLM pipelines, and multilingual voice interfaces, and I've published two peer-reviewed papers
+                to prove it works.
+            </p>
+            <div class="hero-actions justify-center fade-up-init">
+                <a href="#projects" class="btn btn-primary">See my work</a>
+                <a href="#research" class="btn btn-secondary">Read my research</a>
+                <a href="#contact" class="btn btn-outline">Let's talk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container reveal">
+            <h2 class="section-title serif-font text-center">A little about me</h2>
+            <div class="about-grid">
+                <!-- About Description -->
+                <div class="about-text">
+                    <p>
+                        I recently graduated with a degree in a field that didn't exist a few years ago,
+                        <strong>Artificial Intelligence and Data Science</strong>, and I've spent the last four years
+                        building intelligent systems and conducting peer-reviewed research.
+                    </p>
+                    <p>
+                        My research sits at the intersection of Generative AI and accessibility. <strong>EVA</strong>
+                        automates content creation for college events using Stable Diffusion and DreamBooth.
+                        <strong>VOSK</strong> lets people ask questions in English, Hindi, or Malayalam at a railway
+                        station kiosk, and get a spoken answer back. Both are published in IEEE.
+                    </p>
+                    <p>
+                        During my internship at Nvisust Innovations, I built a voice chatbot from scratch, optimised LLM
+                        inference pipelines, and shipped production Python modules. I'm comfortable working across the
+                        full AI stack. From fine-tuning models to designing the API that uses them.
+                    </p>
+                    <p>
+                        I care about AI that's practical, inclusive, and honest about what it can do.
+                    </p>
+                </div>
+
+                <!-- About Card (At a Glance) -->
+                <div class="about-card-container">
+                    <div class="about-card">
+                        <h3 class="card-heading serif-font">At a glance</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-icon">📄</span>
+                                <span class="stat-num">2</span>
+                                <span class="stat-label">IEEE Publications</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-icon">🎓</span>
+                                <span class="stat-num">7.98</span>
+                                <span class="stat-label">B.Tech CGPA</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-icon">🛠️</span>
+                                <span class="stat-num">5+</span>
+                                <span class="stat-label">Real Projects</span>
+                            </div>
+                        </div>
+                        <div class="card-socials">
+                            <a href="https://github.com/anittakurian" target="_blank" rel="noopener noreferrer"
+                                class="social-pill">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/anittakurian74" target="_blank" rel="noopener noreferrer"
+                                class="social-pill">
+                                <i class="fa-brands fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section-padding bg-alt" id="skills">
+        <div class="container reveal">
+            <h2 class="section-title serif-font text-center">Skill Sets & Technologies</h2>
+
+            <div class="skills-wrapper">
+                <!-- Languages -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Languages</h3>
+                    <div class="skills-pills">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">Java</span>
+                        <span class="skill-pill">SQL</span>
+                        <span class="skill-pill">C</span>
+                        <span class="skill-pill">R</span>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">AI & Machine Learning</h3>
+                    <div class="skills-pills">
+                        <span class="skill-pill">Scikit-learn</span>
+                        <span class="skill-pill">TensorFlow</span>
+                        <span class="skill-pill">PyTorch</span>
+                        <span class="skill-pill">LangChain</span>
+                        <span class="skill-pill">RAG</span>
+                        <span class="skill-pill">LLMs</span>
+                        <span class="skill-pill">FAISS</span>
+                        <span class="skill-pill">Hugging Face</span>
+                        <span class="skill-pill">NLP</span>
+                    </div>
+                </div>
+
+                <!-- Generative AI (Highlighted) -->
+                <div class="skills-group highlight-group">
+                    <h3 class="skills-group-title">Generative AI <span class="badge">Headline Focus</span></h3>
+                    <div class="skills-pills">
+                        <span class="skill-pill highlight">Stable Diffusion</span>
+                        <span class="skill-pill highlight">DreamBooth</span>
+                        <span class="skill-pill highlight">LoRA</span>
+                        <span class="skill-pill highlight">Whisper</span>
+                        <span class="skill-pill highlight">IndicASR</span>
+                        <span class="skill-pill highlight">HiFi-GAN</span>
+                        <span class="skill-pill highlight">Prompt Engineering</span>
+                    </div>
+                </div>
+
+                <!-- Data & Analytics -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Data & Analytics</h3>
+                    <div class="skills-pills">
+                        <span class="skill-pill">Pandas</span>
+                        <span class="skill-pill">NumPy</span>
+                        <span class="skill-pill">Power BI</span>
+                        <span class="skill-pill">Tableau</span>
+                        <span class="skill-pill">Matplotlib</span>
+                        <span class="skill-pill">EDA</span>
+                        <span class="skill-pill">ETL</span>
+                    </div>
+                </div>
+
+                <!-- Backend & Tools -->
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Backend & Tools</h3>
+                    <div class="skills-pills">
+                        <span class="skill-pill">FastAPI</span>
+                        <span class="skill-pill">REST APIs</span>
+                        <span class="skill-pill">Docker</span>
+                        <span class="skill-pill">Git</span>
+                        <span class="skill-pill">Linux</span>
+                        <span class="skill-pill">MySQL</span>
+                        <span class="skill-pill">PostgreSQL</span>
+                        <span class="skill-pill">SQLite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section-padding" id="projects">
+        <div class="container reveal">
+            <h2 class="section-title serif-font text-center">Projects Built</h2>
+
+            <div class="projects-grid">
+                <!-- Project 1: Tiny SQL Expert -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag code-font">NLP · LLM · Backend</span>
+                        <i class="fa-solid fa-database project-icon"></i>
+                    </div>
+                    <h3 class="project-title serif-font">Tiny SQL Expert</h3>
+                    <p class="project-description">
+                        An NLP-to-SQL system that converts plain-language questions into safe, optimised SQL queries
+                        using a 1.5B parameter language model. Includes self-correction for query errors, rule-based
+                        keyword extraction, and blocked dangerous commands, designed to run on CPU with no GPU required.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Qwen2-1.5B</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/anittakurian/Tiny-SQL-Expert" target="_blank"
+                            rel="noopener noreferrer" class="project-link">
+                            <i class="fa-brands fa-github"></i> View GitHub <i
+                                class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: EduMate -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag code-font">Generative AI · EdTech · LLM</span>
+                        <i class="fa-solid fa-graduation-cap project-icon"></i>
+                    </div>
+                    <h3 class="project-title serif-font">EduMate</h3>
+                    <p class="project-description">
+                        An AI-powered study companion that reads your PDFs, generates summaries, creates flashcards and
+                        interactive quizzes, and reads content aloud via text-to-speech. Built for students who learn
+                        better with audio and active recall rather than passive reading.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Gemini API</span>
+                        <span class="tech-tag">gTTS</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/anittakurian/Edumate" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            <i class="fa-brands fa-github"></i> View GitHub <i
+                                class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: DocTrack -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag code-font">Web App · Healthcare</span>
+                        <i class="fa-solid fa-user-doctor project-icon"></i>
+                    </div>
+                    <h3 class="project-title serif-font">DocTrack</h3>
+                    <p class="project-description">
+                        A patient data management system for doctors, streamlining records, appointments, and history
+                        into a clean interface built for busy clinical environments.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/anittakurian/DocTrack" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            <i class="fa-brands fa-github"></i> View GitHub <i
+                                class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: AI Voice Chatbot (Internship) -->
+                <div class="project-card proprietary">
+                    <div class="project-header">
+                        <span class="project-tag code-font">LLM · Speech · Production</span>
+                        <i class="fa-solid fa-microphone-lines project-icon"></i>
+                    </div>
+                    <h3 class="project-title serif-font">AI Voice Chatbot</h3>
+                    <p class="project-description">
+                        Built during my internship at Nvisust Innovations, an interactive voice chatbot using
+                        speech-to-text, an LLM backend, and text-to-speech output. I debugged latency issues in the
+                        inference pipeline through profiling and prompt optimisation, reducing response time
+                        significantly in production.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Speech Processing</span>
+                        <span class="tech-tag">LangChain</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="proprietary-note code-font">
+                            <i class="fa-solid fa-lock"></i> Built at Nvisust Innovations · Dec 2025 - Apr 2026
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Published Research / Publications Section -->
+    <section class="research section-padding bg-alt" id="research">
+        <div class="container reveal">
+            <h2 class="section-title serif-font text-center">Published Research</h2>
+            <p class="section-subtitle text-center">
+                Peer-reviewed IEEE publications validating my work in Generative AI and multilingual natural language
+                processing.
+            </p>
+
+            <div class="research-cards">
+                <!-- Research Card 1: EVA -->
+                <div class="research-card">
+                    <div class="research-meta">
+                        <span class="conference-badge code-font"><i class="fa-solid fa-bookmark"></i> IEEE ICSCC
+                            2025</span>
+                        <span class="index-badge status-badge"><i class="fa-solid fa-check-circle"></i> Published in
+                            IEEE Xplore</span>
+                    </div>
+                    <h3 class="research-title serif-font">EVA: AI-Driven Avatar for College Event Promotion</h3>
+                    <div class="research-authors code-font">
+                        <strong>Authors:</strong> Anitta Kurian, Reuben Mathew Tharakan, Keerthana Dhanish, Sravan
+                        Chand, Priya C V
+                    </div>
+                    <p class="research-summary">
+                        College media teams spend hours creating consistent promotional content for every event. EVA
+                        automates this: given a text prompt, it generates an event poster featuring a personalised
+                        avatar (consistent appearance across all images) along with a context-aware caption. Under the
+                        hood, we fine-tuned Stable Diffusion v1.5 with DreamBooth and LoRA on institution-specific
+                        imagery, and used a GPT-based LLM for caption generation. In real-world tests during technical
+                        fests and cultural events, the design team saw a 75% reduction in design time.
+                    </p>
+
+                    <div class="research-highlights">
+                        <div class="highlight-metric">
+                            <span class="metric-num">90%</span>
+                            <span class="metric-desc">Avatar relevance accuracy</span>
+                        </div>
+                        <div class="highlight-metric">
+                            <span class="metric-num">75%</span>
+                            <span class="metric-desc">Reduction in design overhead</span>
+                        </div>
+                    </div>
+
+                    <div class="research-tech">
+                        <span class="tech-tag">Stable Diffusion</span>
+                        <span class="tech-tag">DreamBooth</span>
+                        <span class="tech-tag">LoRA</span>
+                        <span class="tech-tag">GPT-Neo</span>
+                        <span class="tech-tag">CLIPScore</span>
+                    </div>
+
+                    <div class="research-action">
+                        <!-- Replace with real IEEE link or keep generic if not specified -->
+                        <a href="https://ieeexplore.ieee.org/document/11233814" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                            View on IEEE Xplore <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Research Card 2: VOSK -->
+                <div class="research-card">
+                    <div class="research-meta">
+                        <span class="conference-badge code-font"><i class="fa-solid fa-bookmark"></i> IEEE ICITIIT
+                            2026</span>
+                        <span class="index-badge status-badge"><i class="fa-solid fa-check-circle"></i> Published in
+                            IEEE Xplore</span>
+                    </div>
+                    <h3 class="research-title serif-font">VOSK: Voice-Assisted Multilingual Smart Kiosk System</h3>
+                    <div class="research-authors code-font">
+                        <strong>Authors:</strong> Sravan Chand, Keerthana Dhanish, Anitta Kurian, Reuben Mathew
+                        Tharakan, Lekshmi R
+                    </div>
+                    <p class="research-summary">
+                        Railway stations and public spaces in India rely heavily on manual help desks, inaccessible to
+                        elderly users, non-English speakers, and people unfamiliar with touchscreens. VOSK replaces that
+                        with a voice-first kiosk: speak a query in English, Hindi, or Malayalam, and get a spoken answer
+                        back. The pipeline chains Whisper and AI4Bharat IndicASR for speech recognition,
+                        SentenceTransformer embeddings for intent detection, and HiFi-GAN neural TTS for the spoken
+                        response. The system achieves 95% language identification accuracy and ~90% intent
+                        classification across real railway queries.
+                    </p>
+
+                    <div class="research-highlights">
+                        <div class="highlight-metric">
+                            <span class="metric-num">95%</span>
+                            <span class="metric-desc">Language detection accuracy</span>
+                        </div>
+                        <div class="highlight-metric">
+                            <span class="metric-num">90%</span>
+                            <span class="metric-desc">Intent classification rate</span>
+                        </div>
+                        <div class="highlight-metric">
+                            <span class="metric-num">3</span>
+                            <span class="metric-desc">Indian languages supported</span>
+                        </div>
+                    </div>
+
+                    <div class="research-tech">
+                        <span class="tech-tag">Whisper</span>
+                        <span class="tech-tag">IndicASR</span>
+                        <span class="tech-tag">SentenceTransformer</span>
+                        <span class="tech-tag">IndicTTS</span>
+                        <span class="tech-tag">HiFi-GAN</span>
+                    </div>
+
+                    <div class="research-action">
+                        <a href="https://ieeexplore.ieee.org/document/11499644" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                            View on IEEE Xplore <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section-padding" id="experience">
+        <div class="container reveal">
+            <h2 class="section-title serif-font text-center">Experience</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title serif-font">AI & ML Automation Intern</h3>
+                                <div class="timeline-org">Nvisust Innovations Pvt. Ltd.</div>
+                            </div>
+                            <span class="timeline-date code-font">Dec 2025 - Apr 2026</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed an interactive voice chatbot using speech processing, LLMs, and conversational
+                                AI technologies.</li>
+                            <li>Developed Python-based backend modules and automation workflows for AI-driven
+                                applications.</li>
+                            <li>Debugged LLM inference pipeline latency through profiling and prompt optimisation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section class="education-certifications section-padding bg-alt" id="education">
+        <div class="container reveal">
+            <div class="edu-cert-grid">
+                <!-- Education (Left Column) -->
+                <div class="education-section">
+                    <h2 class="section-title serif-font">Education</h2>
+                    <div class="education-timeline">
+                        <!-- College -->
+                        <div class="edu-item">
+                            <h3 class="edu-title serif-font">B.Tech in Artificial Intelligence & Data Science</h3>
+                            <div class="edu-org">Muthoot Institute of Technology and Science (APJKTU)</div>
+                            <div class="edu-meta code-font">2022 - 2026 · CGPA: 7.98 / 10.0</div>
+                        </div>
+                        <!-- High School -->
+                        <div class="edu-item">
+                            <h3 class="edu-title serif-font">Higher Secondary Education</h3>
+                            <div class="edu-org">GHSS Vayala</div>
+                            <div class="edu-meta code-font">2020 – 2022 · Score: 94.03%</div>
+                        </div>
+                        <!-- Secondary School -->
+                        <div class="edu-item">
+                            <h3 class="edu-title serif-font">Secondary Education</h3>
+                            <div class="edu-org">St. John’s School Anchal</div>
+                            <div class="edu-meta code-font">2019 – 2020 · Score: 87%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications (Right Column) -->
+                <div class="certifications-section">
+                    <h2 class="section-title serif-font">Certifications</h2>
+                    <ul class="cert-list">
+                        <li>
+                            <div class="cert-item">
+                                <span class="cert-name">Google Cloud Computing Foundations</span>
+                                <span class="cert-issuer">Google Cloud</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cert-item">
+                                <span class="cert-name">Python for Data Science</span>
+                                <span class="cert-issuer">IIT Kharagpur, NPTEL <span
+                                        class="badge badge-accent">Elite</span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cert-item">
+                                <span class="cert-name">Introduction to Machine Learning</span>
+                                <span class="cert-issuer">IIT Madras, NPTEL <span
+                                        class="badge badge-accent">Elite</span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cert-item">
+                                <span class="cert-name">Data Analytics with Python</span>
+                                <span class="cert-issuer">IIT Roorkee, NPTEL <span
+                                        class="badge badge-accent">Elite</span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cert-item">
+                                <span class="cert-name">Web Development with Django</span>
+                                <span class="cert-issuer">ZeroPixels</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container reveal text-center">
+            <h2 class="section-title serif-font">Let's talk.</h2>
+            <p class="contact-subtitle">
+                I'm currently open to internship and entry-level opportunities in AI/ML engineering, NLP, and Generative
+                AI. If something I've built caught your eye, I'd love to hear from you.
+            </p>
+
+            <div class="contact-grid">
+                <!-- Email Card -->
+                <button id="email-card" class="contact-card" title="Click to copy email address">
+                    <div class="contact-card-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-card-title serif-font">Email</h3>
+                    <p class="contact-card-value" id="email-value">anittakurian74@gmail.com</p>
+                    <span class="contact-card-hint" id="email-hint"><i class="fa-regular fa-copy"></i> Click to
+                        copy</span>
+                </button>
+
+                <!-- LinkedIn Card -->
+                <a href="https://linkedin.com/in/anittakurian74" target="_blank" rel="noopener noreferrer"
+                    class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <h3 class="contact-card-title serif-font">LinkedIn</h3>
+                    <p class="contact-card-value">/in/anittakurian74</p>
+                    <span class="contact-card-hint">Visit profile <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
+
+                <!-- GitHub Card -->
+                <a href="https://github.com/anittakurian" target="_blank" rel="noopener noreferrer"
+                    class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <h3 class="contact-card-title serif-font">GitHub</h3>
+                    <p class="contact-card-value">/anittakurian</p>
+                    <span class="contact-card-hint">Visit profile <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>Built by Anitta Kurian &copy; 2026. Hosted on Vercel.</p>
+            <p class="footer-links">
+                <a href="https://github.com/anittakurian" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <i class="fa-brands fa-github"></i> View source on GitHub
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
